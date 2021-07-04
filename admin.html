@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+      
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div id="topnav">
+<a class="menu"><i class="fas fa-bars"></i></a>
+<a class="logo">e learning</a>
+<div class="search-container">
+<form action="#">
+    <span><i class="fas fa-search fa-lg"></i></span>
+    <input type="search" placeholder="search" class="search">
+</form>
+</div>
+<div class="top-right">
+    <a href="#"style="font-size: 15px;"><span class="notif-num">3</span> <i class="far fa-bell fa-lg"></i> </a>
+          
+
+    <a href="#"style="font-size: 15px;"><i class="fas fa-ellipsis-v"></i></a>
+    
+</div>
+    </div>
+    <div id="notification">
+        <ul>
+        <li>notification 1</li>
+        <li>notification 2</li>
+        <li>notification 3</li>
+        <li>notification 4</li>
+    </ul>
+    </div>
+    <!-- section -->
+    <section class="container">
+        <div id="sidenav">
+        <ul class="profile">
+            <li class="sub-profile"></li>
+            <li class="sub-profile username">nandhini</li>
+            <li class="sub-profile usermail">admin@gmail.com</li>
+        </ul>
+        <ul class="menu-items">
+            <li class="active"><i class="fas fa-book-reader"></i>dashboard</li>
+            <li><i class="fas fa-laptop-code"></i>course</li>
+            <li><i class="fas fa-dollar-sign"></i>sales</li>
+            <li><i class="fas fa-chart-line"></i>analytics</li>
+            <li><i class="fas fa-user"></i>user</li>
+        </ul>
+            <ul class="footer">
+                <li>e learning &copy;</li>
+                <li><a href="#">Privacy</a> & <a href="#">Terms</a></li>
+            </ul>
+
+        </div>
+        <div class="main-content">
+<div class="info">
+    <div class="info-item">
+        <ul>
+            <li>Sales  <span class="title-flex">gross</span></li>
+            <li class="sales-money">$ 43,190 <span>This week</span></li>
+            
+       </ul>
+       <canvas id="myBarChart" width="100%" height="20px"></canvas>
+    </div>
+    <div class="info-item">
+        <ul>
+            <li class="page_views">Page views  <i class="fas fa-ellipsis-v"></i></li>
+            <li class="sales-money">83,710 <span>This month</span></li>
+            
+        </ul>
+        <canvas id="myLineChart" width="100%" height="20px"></canvas>
+    </div>
+    <div class="info-item">
+            <!-- sales-->
+            <ul>
+                <li>Reports</li>
+                <li class="sales-money">22,000 <span>Last week</span> <span class="sales-money-rate">8% <i class="fas fa-chart-line"></i></span></li>
+            
+            </ul>
+            <canvas id="myChart"   style="width: 100%; max-height:10px;"></canvas>
+
+    </div>
+</div>
+        </div>
+<div class="invoice-details">
+<div class="invoices">
+<span class="invoices-title">invoices</span>
+<span class="search-invoices"><form action="#"><input type="search" placeholder="search"></form></span>
+</div>
+<table class="invoices-table">
+<tbody>
+    <tr class="table-header">
+        <th>ID</th>
+        <th>student name</th>
+        <th>course</th>
+        <th>payment type</th>
+        <th>amount</th>
+        <th>date</th>
+        <th>progress</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>student 1</td>
+        <td>full stack course</td>
+        <td>paytm</td>
+        <td>10,000</td>
+        <td>12/3/2021</td>
+        <td><i class="fas fa-spinner"></i>progress</td>
+    </tr>
+    <tr>  
+        <td>2</td>
+        <td>student 1</td>
+        <td>full stack course</td>
+        <td>paytm</td>
+        <td>10,000</td>
+        <td>12/3/2021</td>
+        <td><i class="fas fa-spinner"></i>final</td>
+    </tr>
+    <tr>  
+        <td>3</td>
+        <td>student 1</td>
+        <td>full stack course</td>
+        <td>paytm</td>
+        <td>10,000</td>
+        <td>12/3/2021</td>
+        <td><i class="fas fa-spinner"></i>progress</td>
+    </tr>
+    <tr>  
+        <td>4</td>
+        <td>student 1</td>
+        <td>full stack course</td>
+        <td>paytm</td>
+        <td>10,000</td>
+        <td>12/3/2021</td>
+        <td><i class="fas fa-spinner"></i>progress</td>
+    </tr>
+    <tr> 
+        <td>5</td>
+        <td>student 1</td>
+        <td>full stack course</td>
+        <td>paytm</td>
+        <td>10,000</td>
+        <td>12/3/2021</td>
+        <td><i class="fas fa-spinner"></i>final</td>
+    </tr>
+</tbody>
+</table>
+        </div>
+        <div id="sidebar">
+<ul class="messages">
+    <span class="msg-title">new messages</span>
+    <li class="msg-list">
+        <span></span>
+        <span>student 12</span>
+        <span>just now</span>
+    </li>
+    <li class="msg-list">
+        <span></span>
+        <span>sales head</span>
+        <span>30 min ago</span>
+    </li>
+    <li class="msg-list">
+        <span></span>
+        <span>bruces</span>
+        <span>1 hour ago</span>
+    </li>
+</ul>
+<ul>
+    <span></span>
+    <li>team meeting</li>
+    <li>sale target <span>15</span></li>
+    <li>no more events</li>
+
+</ul>
+        </div>
+   </section>
+</body>
+</html>

@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    box-sizing:border-box ;
+}
+body{
+    background-color: #ddd;
+}
+#topnav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #00acc0;
+    overflow: hidden;
+    box-shadow: 0 0 7px #333;
+    z-index: 2;
+}
+#topnav a{
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    text-decoration: none;
+}
+#topnav a:hover{
+    cursor: pointer;
+}
+.logo{
+    padding: 0 20px;
+    font-weight: bold;
+}
+.top-right{
+    float: right;
+}
+.top-right a{
+    padding: 15px;
+}
+.fa-ellipsis-v:focus{
+    color: #555;
+}
+.search-container{
+    position: absolute;
+    left: 50%;
+    display: inline-block;
+    transform: translateX(-50%);
+}
+.search-container i{
+    position: absolute;
+    left: 0;
+    top: 8px;
+    padding: 10px 8px;
+    color: #fff;
+   
+}
+.search-container .search{
+    padding: 6px 6px 6px;
+    margin-top: 8px;
+    border-radius: 5px;
+    width: 500px;
+    border: none;
+    font-size: 17px;
+    background-color:#3cbbcc;
+    color: #fff;
+}
+.search-container .search::placeholder{
+    color: #fff;
+    font-size: 15px;
+    padding: 40px;
+   
+}
+.notif-num{
+    position: relative;
+    left: 25px;
+    top: -10px;
+    font-size: 10px;
+    background-color: rgb(255, 0, 98);
+    color: #fff;
+    padding: 1px 4px;
+    border-radius: 50%;
+}
+#sidenav{
+    display: block;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 1;
+    background: #fff;
+    width: 15%; 
+    height: 100%;
+    box-shadow: 0 0 7px #333;
+    transition: all .3s ease 0s;
+    overflow: auto;
+}
+.profile{
+    position: relative;
+    top: 50px;
+    padding-top: 10px;
+    display: block;
+    height: 130px;
+    background-image: url("https://attentionmedia.se/wp-content/uploads/2017/11/white-background-4-300x225.jpg");
+}
+.sub-profile{
+    padding: 5px 0 0 20px;
+}
+.username{
+    font-size: 14px;
+    font-weight: 800;
+}
+.usermail{
+    font-size: 13px;
+    font-weight: 800;
+    color: #333;
+}
+.menu-items{
+    padding: 10px 0;
+}
+.menu-items li{
+    display: block;
+    position: relative;
+    padding: 10px 0 10px 20px;
+    top: 50px;
+    color: #333;
+    font-size: 15px;
+}
+.menu-items li:hover{
+    background-color: #3cbbcc;
+    cursor: pointer;
+}
+.active{
+    background-color: #3cbbcc;
+}
+.menu-items li i{
+    padding-right: 15px;
+    color: #555;
+}
+.footer{
+    position: relative;
+    top: 50px;
+    padding: 20px;
+    border-top: 1px solid #3cbbcc;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+.footer li a{
+    text-decoration: none;
+    color: #22909e;
+}
+.container{
+    position: relative;
+    top: 50px;
+    /* padding-bottom: 50px; */
+    overflow: hidden;
+}
+.main-conatiner{
+    padding: 10px 0px;
+}
+.info{
+    position: relative;
+    top: 20px;
+    width: 20px;
+    z-index: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:25px ;
+}
+.info-item{
+    background-color: rgba(255, 255, 255, 0.8);
+    /* padding: 20px; */
+    box-shadow: 0 2px 5px rgb(207, 207, 207);
+    position: relative;
+    height: 150px;
+    width: 100px;
+
+}
+.info-item ul{
+    list-style: none;
+    font-weight: bold;
+    padding: 20px;
+}
+.info-item ul li{
+    padding: 5px 0;
+    font-size: 12px;
+    color: #333;
+}
+.title-flex{
+    background-color: #3cbbcc;
+    padding: 2px 5px;
+    color: #fff;
+    float: right;
+    font-size: 10px;
+}
+.info-item .sales-money{
+    font-size: 20px;
+}
+.info-item .sales-money span{
+    font-size: 12px;
+    padding-left: 5px;
+}
+.sales-money-rate{
+    padding: 2px 5px;
+    color: rgb(25, 170, 61);
+}
+.info-item ul li i{
+    float: right;
+}
+.info-item ul li i:hover{
+    cursor: pointer;
+}
+.invoice-details{
+    background-color: #fff;
+    position: relative;
+    top: 50px;
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgb(207, 207, 207);
+
+}
+.invoices{
+    padding-top: 10px;
+}
+.invoices .invoices-title{
+    font-weight: 900;
+    font-size: 17px;
+    color: #333;
+    padding-left:20px ;
+}
+.invoices .search-invoices{
+    float: right;
+    padding-right: 20px;
+}
+.invoices .search-invoices form input{
+   border-radius: 30px;
+   width: 60px;
+   border: none;
+   text-align:right;
+}
+.invoices .search-invoices form input:focus{
+    width: 150px;
+    transition: all 0.2s ease-in-out;
+}
+.invoices-table{
+    border-collapse: collapse;
+    padding: 0px 20px;
+    width: 95%;
+    margin: 0 auto;
+    color: #333;
+}
+td,.table-header th{
+border-bottom: 1px solid #dddddd;
+text-align:left ;
+padding: 15px ;
+}
+.table-header th{
+font-size: 17px;
+font-weight: 900;
+}
+td{
+    font-size: 15px;
+font-weight: 600;
+}
+.fa-spinner{
+    color: #229e33;
+}
+canvas{
+    position: absolute;
+    bottom: 0;
+}
+/* Right Menu bar */
+.right_sidebar{
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index:1 ;
+    height: 100%;
+    width: 220px;
+    overflow: auto;
+    background: rgb(206, 206, 206);
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.05);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.messages{
+    position: relative;
+    top: 50px;
+    padding-top: 15px;
+    display: block;
+    height: 150px;
+    
+}
+
+.msg_title{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;    
+    color: #555;
+    padding: 20px;
+}
+
+.messages_list{
+    padding: 20px;
+    font-size: 12px;
+}
+.messages_img{
+    float: left;
+}
+.messages_user{
+    font-weight: 900;
+    padding: 2px 10px 2.5px 10px;
+    float: left;
+}
+
+.messages_time{
+    padding: 2.5px 10px 0 10px ;
+    float:left;
+}
+
+.events{
+    clear: both;
+    display: block;
+    position: relative;
+    top:50px;
+    padding-top: 10px;
+    
+}
+.event_title{
+    clear: both;
+    position: relative;
+    box-sizing:border-box;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;    
+    color: #555;
+    /* margin-bottom: 20px; */
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.event_title >i{
+    position: relative;
+    top: 5px;
+    float: right;
+    font-size: 12px;
+    padding-right: 20px;
+}
+
+.events_list{
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    color: #555;
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(173, 173, 173);
+    
+}
+.event_nums{
+    float: right;
+    background-color: #17828a;
+    padding: 5px 5px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.more_event{
+    list-style: none;
+    text-transform: capitalize;
+    margin: 0 auto;
+    width: 80%;
+    color: #999;
+    font-size: 10px;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(173, 173, 173);
+}
+
+.stat_chart{
+    
+    position: relative;
+    top:10px;
+    clear: both;
+    margin: 0 auto;
+    height:40vh; width:80vw;
+    padding: 10px;
+}
+
+#notifs{
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    width: 250px;
+    font-size: 12px;
+    z-index: 999;
+    background-color: rgb(240, 240, 240);
+    color: rgb(36, 36, 36);
+    text-align: left;
+    list-style: none;
+    margin-right: 3%;
+    animation-duration: 0.5s;
+    
+}
+
+#notifs li{
+    padding:10px 0 10px 10px;
+    list-style: none;
+   
+}
+#notifs li:hover{
+    background-color: #999;
+    color: #fff;
+    cursor: pointer;
+}
+.notif_list:nth-child(odd){
+    border-left:3px solid  #1c18fc;   
+ }
+.notif_list:nth-child(even){
+    border-left:3px solid  #188efc;   
+ }
+
+ #more_notifs{
+     clear: both;
+     background-color: rgb(240, 240, 240);
+     font-size: 10px;
+     text-align: center;
+     border: none;
+     padding: 15px 0px;
+     cursor: pointer;
+ }
+ #more_notifs:hover{
+     background-color:  rgb(157, 171, 255);
+ }
